@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:cloudflare": "npm run build && node scripts/cloudflare-build.mjs"
   },
   "dependencies": {
     "@js-temporal/polyfill": "^0.5.1",
